@@ -31,3 +31,9 @@ As intended I used only a single stream. Was tough as I'm not a fan of hard do r
 The solution was easy but the parsing led to ugly code. Nevertheless a good one to use the "new" Deque interface (instead of Stack) and a little bit of regex traing.
 
 ---
+
+**Day 6**
+
+This was the easiest puzzle ever. Felt more like day a day 1 puzzle. Escepcially part 2 was just changing the chunks from 4 to 14. 
+
+---
