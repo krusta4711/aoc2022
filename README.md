@@ -1,6 +1,6 @@
 **Advent of Code 2022**
 
-My solutions for the great Advent of Code 2022 exercises (https://adventofcode.com/2022) in java. The code is not always pefectly clean as I often try out things just to try them out (e.g. single liners with streams). ;-)
+My solutions for the great Advent of Code 2022 exercises (https://adventofcode.com/2022) in Java. The code is not always pefectly clean as I often try out things just to try them out (e.g. single liners with streams).
 
 ---
 
@@ -18,13 +18,13 @@ German: Stein, Schere, Papier. I implemented this one with enums.
 
 **Day 3**
 
-I wasn't pleased  with my solution. It was neither a nice design nor short. On reddit I found a crazy oneliner which challenged me to use a single steam too on day 4. Let's see. ;-)
+I wasn't pleased  with my solution. It was neither a nice design nor short. On reddit I found a crazy oneliner which challenged me to use a single stream too on day 4. Let's see. ;-)
 
 ---
 
 **Day 4**
 
-As intended, I used only a single stream. Was tough as I'm not a fan of hard do read single line code. But was fun too.
+As intended, I used just a single stream obe-liner. Was tough as I'm not a fan of hard to read single line code. But was fun too.
 
 ---
 
