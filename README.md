@@ -36,7 +36,7 @@ The solution was easy but the parsing led to ugly code. Nevertheless, a good one
 
 **Day 6**
 
-This was the easiest puzzle ever. Felt more like day a day 1 puzzle. Especially for part 2 it was just changing the chunks from 4 to 14. 
+This was the easiest puzzle ever. Felt more like day a day 1 puzzle. Especially for part 2 it was just changing the chunks from 4 to 14. At the beginning I used a `Set` for finding out the distinct chars but then found out that a int-stream provides the method `distinct`.
 
 ---
 
