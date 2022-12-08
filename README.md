@@ -30,7 +30,7 @@ As intended, I used only a single stream. Was tough as I'm not a fan of hard do 
 
 **Day 5**
 
-The solution was easy but the parsing led to ugly code. Nevertheless, a good one to use the Deque interface and a little bit of regex training.
+The solution was easy but the parsing led to ugly code. Nevertheless, a good one to use the `Deque` interface and a little bit of regex training.
 
 ---
 
@@ -48,6 +48,6 @@ Nice one. I was thinking of just maintaining the directories and their sizes but
 
 **Day 8**
 
-A good old grid/matrix exercise by Advent of Code. I don't like to use hundreds of loops in loops. Additionally accessing a grid/matrix in a loop can drive one crazy when using i and j as loop index and borders have to be taken into account. So I tried a different solution this time. I didn't fill the grid with integers but with instances of my own class 'Tree' which all know their siblings. In that class I used recursion to calculate the solutions. So I didn't have to mess around with indices and borders. My Tree class can maybe still be slimed down a bit. Using A Non-Tree instance instead of null might be solution too.
+A good old grid/matrix exercise by Advent of Code. I don't like to use hundreds of loops in loops. Additionally accessing a grid/matrix in a loop can drive one crazy when using `i` and `j` as loop indeces and `+` and `-` to navigate and borders have to be taken into account. So I tried a different solution this time. I didn't fill the grid with integers but with instances of my own class `Tree` which all know their siblings. In that class I used recursion to calculate the solutions. So I didn't have to mess around with indices and borders. My Tree class can maybe still be slimed down a bit. Using a Non-Tree instance instead of `null` might be cool too. But time was over.
 
 ---
