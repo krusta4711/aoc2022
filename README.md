@@ -1,6 +1,6 @@
 **Advent of Code 2022**
 
-My solutions for the great Advent of Code 2022 taks (https://adventofcode.com/2022) in java. The code is not always pefectly clean as I often try out things just to try them out (e.g. single liners with streams). ;-)
+My solutions for the great Advent of Code 2022 tasks (https://adventofcode.com/2022) in java. The code is not always pefectly clean as I often try out things just to try them out (e.g. single liners with streams). ;-)
 
 ---
 
