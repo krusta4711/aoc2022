@@ -55,34 +55,22 @@ public class Tree implements Treeable {
 
 	@Override
 	public int viewToLeft(int startTreeHight) {
-		if (isHigherOrSameHight(startTreeHight)) // no more (lower) trees
-			return 1;
-		else
-			return 1 + left.viewToLeft(startTreeHight); // +1 and ask the next visible tree
+		return isHigherOrSameHight(startTreeHight) ? 1 : left.viewToLeft(startTreeHight) + 1;
 	}
 
 	@Override
 	public int viewToRight(int startTreeHight) {
-		if (isHigherOrSameHight(startTreeHight))
-			return 1;
-		else
-			return 1 + right.viewToRight(startTreeHight);
+		return isHigherOrSameHight(startTreeHight) ? 1 : right.viewToRight(startTreeHight) + 1;
 	}
 
 	@Override
 	public int viewToTop(int startTreeHight) {
-		if (isHigherOrSameHight(startTreeHight))
-			return 1;
-		else
-			return 1 + top.viewToTop(startTreeHight);
+		return isHigherOrSameHight(startTreeHight) ? 1 : top.viewToTop(startTreeHight) + 1;
 	}
 
 	@Override
 	public int viewToBottom(int startTreeHight) {
-		if (isHigherOrSameHight(startTreeHight))
-			return 1;
-		else
-			return 1 + bottom.viewToBottom(startTreeHight);
+		return isHigherOrSameHight(startTreeHight) ? 1 : bottom.viewToBottom(startTreeHight) + 1;
 	}
 
 	public int scenicScore() {
