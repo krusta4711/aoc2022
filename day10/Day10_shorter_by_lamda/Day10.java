@@ -36,14 +36,14 @@ public class Day10 {
 		}
 	}
 
-	Runnable doCyclePart1 = () -> {
+	private Runnable doCyclePart1 = () -> {
 		cycle++;
 		if (cycle == 20 || (cycle - 20) % 40 == 0) {
 			result += cycle * registerX;
 		}
 	};
 
-	Runnable doCyclePart2 = () -> {
+	private Runnable doCyclePart2 = () -> {
 		if (cycle > 0 && cycle % 40 == 0) {
 			pos = 0;
 			System.out.println(); // new line
