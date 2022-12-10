@@ -57,3 +57,9 @@ A good old grid/matrix exercise by Advent of Code. I don't like to use hundreds 
 Arrgh. I totally over-engineered part 1 and then got lost in part 2 with problems in my hash-method. Needed way to much time. Bad day.
 
 ---
+
+**Day 10**
+
+Easy one with funny ASCII art as result of part 2. My code is ok. Nevertheless I try to change it to functional interfaces, so that the looping is not doubled in the code.
+
+---
