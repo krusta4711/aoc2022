@@ -13,7 +13,7 @@ public class Day10 {
 	private String resultPart2 = "";
 
 	@Test
-	public void dayTenPart() throws IOException {
+	public void dayTen() throws IOException {
 		var inputList = Files.readAllLines(Paths.get("src/test/resources/day10.txt"));
 
 		for (String oneLine : inputList) {
