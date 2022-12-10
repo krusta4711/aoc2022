@@ -60,6 +60,5 @@ Arrgh. I totally over-engineered part 1 and then got lost in part 2 with problem
 
 **Day 10**
 
-Easy one with funny ASCII art as result of part 2. My code is ok. Nevertheless I try to change it to functional interfaces, so that the looping is not doubled in the code.
-
+Easy one with funny ASCII art as result of part 2. My code is ok but the main loop is doubled which I do not like. EDIT: I uploaded a shorter version where I used lambda expression to use the methods as parameter for the main loop. The code is now way shorter but still not clean as it does not feel good that both methods use the same variables. But I decided to fetch me a cold beer instead of refactoring. :-P
 ---
