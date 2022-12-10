@@ -9,8 +9,6 @@ import org.junit.jupiter.api.Test;
 
 public class Day10 {
 
-	public static final String NOOP = "noop";
-	public static final String ADD_X = "addx";
 	private int registerX, cycle, result, pos;
 
 	@Test
@@ -28,7 +26,7 @@ public class Day10 {
 		System.out.println("----- Day 10 " + "part " + part + " -----");
 		for (String oneLine : inputList) {
 			var command = oneLine.split(" ");
-			if (NOOP.equals(command[0])) {
+			if ("noop".equals(command[0])) {
 				doCycle.run();
 			} else {
 				doCycle.run();
