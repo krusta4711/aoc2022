@@ -62,4 +62,11 @@ Arrgh. I totally over-engineered part 1 and then got lost in part 2 with problem
 
 Easy one with funny ASCII art as result of part 2. My code is ok but the main loop is doubled which I do not like. EDIT: I uploaded a shorter version where I used lambda expression to use the methods as parameter for the main loop. The code is now way shorter but still not clean as it does not feel good that both methods use the same variables. But I decided to fetch me a cold beer instead of refactoring. :-P
 Even shorter is the version, where the calculation for part 1 and 2 are done in one method.
+
+---
+
+**Day 11**
+
+Part 1 was great. Some parsing and a few calculation. Part 2 was the hell, because the numbers got too big (which was intended by AoC). I couldn't solve it with BigInteger, because it was too slow. I didn't know the math how to reduce the items by using a super modulo. So I needed help in reddit to find out the math behind it.
+
 ---
