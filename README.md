@@ -70,3 +70,9 @@ Even shorter is the version, where the calculation for part 1 and 2 are done in 
 Part 1 was great. Some parsing and a few calculation. Part 2 was the hell, because the numbers got too big (which was intended by AoC). I couldn't solve it with BigInteger, because it was too slow. I didn't know the math how to reduce the items by using a super modulo. So I needed help in reddit to find out the math behind it.
 
 ---
+
+**Day 12**
+
+I do not like the days where it is just about mathematics and nothing else. I used the BFS (Breadth-first search) this year, as I used the Dijkstra algorithm last year. I tried to solved it without using a grid but Node-classes that know their siblings instead. It would have worked but I had to remember the last row for setting the siblings which didn't lead to less or cleaner code than using a grid directly.
+
+---
