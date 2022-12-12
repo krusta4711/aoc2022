@@ -1,6 +1,6 @@
 **Advent of Code 2022**
 
-My solutions for the great Advent of Code 2022 exercises (https://adventofcode.com/2022) in Java. The code is not always pefectly clean as I often try out things just to try them out (e.g. single liners with streams).
+My solutions for the great `Advent of Code` 2022 exercises (https://adventofcode.com/2022) in Java. The code is not always pefectly clean as I often try out things just to try them out (e.g. single liners with streams).
 
 ---
 
@@ -24,7 +24,7 @@ I wasn't pleased  with my solution. It was neither a nice design nor short. On r
 
 **Day 4**
 
-As intended, I used just a single stream obe-liner. Was tough as I'm not a fan of hard to read single line code. But was fun too.
+As intended, I used just a single stream one-liner. Was tough as I'm not a fan of hard to read single line code (it's much more important to readthan to write code). But was fun too.
 
 ---
 
@@ -54,7 +54,7 @@ A good old grid/matrix exercise by Advent of Code. I don't like to use hundreds 
 
 **Day 9**
 
-Arrgh. I totally over-engineered part 1 and then got lost in part 2 with problems in my hash-method. Needed way to much time. Bad day.
+Arrgh. I totally over-engineered part 1 and then got lost in part 2 with a problem in my hash-method. Needed way to much time. Bad day.
 
 ---
 
@@ -73,6 +73,6 @@ Part 1 was great. Some parsing and a few calculation. Part 2 was the hell, becau
 
 **Day 12**
 
-I do not like the days where it is just about mathematics and nothing else. I used the BFS (Breadth-first search) this year, as I used the Dijkstra algorithm last year. I tried to solved it without using a grid but Node-classes that know their siblings instead. It would have worked but I had to remember the last row for setting the siblings which didn't lead to less or cleaner code than using a grid directly.
+I do not like the days where it is just about mathematics and nothing else. I used the `BFS (Breadth-first search)` this year, as I used the `Dijkstra` algorithm last year. I tried to solved it without using a grid but Node-classes that know their siblings instead. It would have worked but I had to remember the last row for setting the siblings which didn't lead to less or cleaner code than using a grid directly.
 
 ---
