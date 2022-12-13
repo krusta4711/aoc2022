@@ -76,3 +76,10 @@ Part 1 was great. Some parsing and a few calculation. Part 2 was the hell, becau
 I do not like the days where it is just about mathematics and nothing else. I used the `BFS (Breadth-first search)` this year, as I used the `Dijkstra` algorithm last year. I tried to solved it without using a grid but Node-classes that know their siblings instead. It would have worked but I had to remember the last row for setting the siblings which didn't lead to less or cleaner code than using a grid directly.
 
 ---
+
+**Day 13**
+
+Ouch. I tried to find an error in my compare  method for three hours just to find out that the parsing was the problem: numbers might be bigger than one digit which my parsing code did not reflect. At least it worked after that... but my code got worse and worse while trying to find the problem. In real life I would have to throw it aways and start over for having it clean. ;-)
+Part 2 was easy. I just introduced a `Comparator`, threw everything in a list and sort it. Took 5 minutes.
+
+---
