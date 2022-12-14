@@ -87,5 +87,6 @@ Part 2 was easy. I just introduced a `Comparator`, threw everything in a list an
 **Day 14**
 
 Nice one. I decided to neither use `array` nor `recursion` the next time AoC presents a grid exercise (which was today). So I put all blocked coordinates into a `HashSet` to try out what happens. It worked but I do not think that I will use this approach again in the future. ;-)
+Edit: I didn't like my code as there where too many while loops and bad use of null return values. So I did a refactoring and use `recursion` after all. The code is a lot more intuitive now.
 
 ---
