@@ -16,6 +16,9 @@ public abstract class Cave {
 
 	record Point(int x, int y) {};
 
+	abstract boolean isAbyssReached(Point point);
+	abstract boolean isBottom(int currentY);
+
 	public Cave(List<String> input) {
 		lowestX = Integer.MAX_VALUE;
 		highestX = highestY = Integer.MIN_VALUE;
@@ -24,10 +27,6 @@ public abstract class Cave {
 		abyssReached = caveIsFull = false;
 		parseInput(input);
 	}
-
-	abstract boolean isAbyssReached(Point point);
-
-	abstract boolean isBottom(int currentY);
 
 	public int startSandDesaster() {
 		int count = 0;
@@ -42,21 +41,19 @@ public abstract class Cave {
 
 	private Point nextLandingSpot(Point currentPoint) {
 		Point lastSpot = currentPoint;
-		while (true) {
-			Point nextSpot = nextFreeCoordinate(lastSpot);
-			if (isAbyssReached(nextSpot)) {
-				abyssReached = true;
-				return nextSpot;
-			}
-			if (nextSpot.equals(start)) {
-				caveIsFull = true;
-				return nextSpot;
-			}
-			if (nextSpot.equals(lastSpot)) // landing spot found
-				return nextSpot;
-
-			lastSpot = nextSpot;
+		Point nextSpot = nextFreeCoordinate(lastSpot);
+		if (isAbyssReached(nextSpot)) {
+			abyssReached = true;
+			return nextSpot;
 		}
+		if (nextSpot.equals(start)) {
+			caveIsFull = true;
+			return nextSpot;
+		}
+		if (nextSpot.equals(lastSpot)) // landing spot found
+			return nextSpot;
+
+		return nextLandingSpot(nextSpot);
 	}
 
 	private Point nextFreeCoordinate(Point currentPoint) {
