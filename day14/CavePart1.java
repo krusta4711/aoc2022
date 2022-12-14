@@ -9,7 +9,7 @@ public class CavePart1 extends Cave {
 	}
 
 	@Override
-	boolean isOutOfEdges(Point point) {
+	boolean isAbyssReached(Point point) {
 		return point.x() < getLowestX() || point.x() > getHighestX() || point.y() > getHighestY();
 	}
 
