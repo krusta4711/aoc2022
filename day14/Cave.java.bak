@@ -14,7 +14,8 @@ public abstract class Cave {
 	private boolean abyssReached, caveIsFull;
 	private Point start;
 
-	record Point(int x, int y) {};
+	record Point(int x, int y) {
+	};
 
 	public Cave(List<String> input) {
 		lowestX = Integer.MAX_VALUE;
