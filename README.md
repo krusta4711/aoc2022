@@ -79,7 +79,13 @@ I do not like the days where it is just about mathematics and nothing else. I us
 
 **Day 13**
 
-Ouch. I tried to find an error in my compare  method for three hours just to find out that the parsing was the problem: numbers might be bigger than one digit which my parsing code did not reflect. At least it worked after that... but my code got worse and worse while trying to find the problem. In real life I would have to throw it aways and start over for having it clean. ;-)
+Ouch. I tried to find an error in my compare  method for three hours just to find out that the parsing was the problem: numbers might be bigger than one digit which my parsing code did not reflect. At least it worked after that... but my code got worse and worse while trying to find the problem and using recursion was the wrong idea, as there were too many exceptions in the rules. In real life I would have to throw it aways and start over for having it clean. ;-)
 Part 2 was easy. I just introduced a `Comparator`, threw everything in a list and sort it. Took 5 minutes.
+
+---
+
+**Day 14**
+
+Nice one. I decided to neither use `array` nor `recursion` the next time AoC presents a grid exercise (which was today). So I put all blocked coordinates into a `HashSet` to try out what happens. It worked but I do not think that I will use this approach again in the future. ;-)
 
 ---
