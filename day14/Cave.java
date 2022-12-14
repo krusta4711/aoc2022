@@ -110,9 +110,9 @@ public abstract class Cave {
 	}
 
 	private void setCaveEdges(Point point) {
-		lowestX = point.x() < lowestX ? point.x() : lowestX;
-		highestX = point.x() > highestX ? point.x() : highestX;
-		highestY = point.y() > highestY ? point.y() : highestY;
+		lowestX = Math.min(lowestX, point.x());
+		highestX = Math.max(highestX, point.x());
+		highestY = Math.max(highestY, point.y());
 	}
 
 	private int[] sort(int a, int b) {
