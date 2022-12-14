@@ -40,8 +40,7 @@ public abstract class Cave {
 	}
 
 	private Point nextLandingSpot(Point currentPoint) {
-		Point lastSpot = currentPoint;
-		Point nextSpot = nextFreeCoordinate(lastSpot);
+		Point nextSpot = nextFreeCoordinate(currentPoint);
 		if (isAbyssReached(nextSpot)) {
 			abyssReached = true;
 			return nextSpot;
@@ -50,7 +49,7 @@ public abstract class Cave {
 			caveIsFull = true;
 			return nextSpot;
 		}
-		if (nextSpot.equals(lastSpot)) // landing spot found
+		if (nextSpot.equals(currentPoint)) // landing spot found
 			return nextSpot;
 
 		return nextLandingSpot(nextSpot);
