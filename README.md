@@ -90,3 +90,21 @@ Nice one. I decided to neither use `array` nor `recursion` the next time AoC pre
 Edit: I didn't like my code as there where too many while loops and bad use of null return values. So I did a refactoring and use `recursion` after all. The code is a lot more intuitive now.
 
 ---
+
+**Day 15**
+
+It was fun to get the logic behind it. But I had no time left for part 2.
+
+---
+
+**Day 17**
+
+Programming `Tetris` was real fun. I worked with a clean Object structure to keep the overview. But creating the objects and handle them in a Map not fast enough for part 2. I would have to wait 3 days for the result. ;-)
+
+---
+ 
+**Day 20**
+
+Nice one. I decided to just work with the indices to not get caught again by a clean but too slow design for part 2. I had a one-off problem in my modulo for negative indices so I needed a little bit help by other code examples. Part 2 was easy because my code was fast enough this time.
+
+---
