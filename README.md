@@ -108,3 +108,29 @@ Programming `Tetris` was real fun. I worked with a clean Object structure to kee
 Nice one. I decided to just work with the indices to not get caught again by a clean but too slow design for part 2. I had a one-off problem in my modulo for negative indices so I needed a little bit help by other code examples. Part 2 was easy because my code was fast enough this time.
 
 ---
+
+ 
+**Day 22**
+
+Nice one. I didn't use a grid but Objects which know the position next to them and recursion. Would have worked great with the second part 2 too. But my brain was too lazy to find out which sites of the cube do touch.
+
+---
+
+ 
+**Day 23**
+
+Nice one again. My code is a little bit lengthy and should be refactored a little bit. But it perfectly fitted for part 2 which took me just a few seconds.
+
+---
+ 
+**Day 24**
+
+Sounds too time-consuming to implement on Christmas. Some kind of graph operation (e.g. `BFS`) but in a dynamically changing graph. 
+
+---
+ 
+**Day 25**
+
+I enjoyed this one. But as I didn't find the math behind it, I have a lot of if then else in my code. ;-) 
+
+---
