@@ -18,13 +18,13 @@ German: Stein, Schere, Papier. I implemented this one with enums.
 
 **Day 3**
 
-I wasn't pleased  with my solution. It was neither a nice design nor short. On reddit I found a crazy oneliner which challenged me to use a single stream too on day 4. Let's see. ;-)
+I wasn't pleased with my solution. It was neither a nice design nor short. On reddit I found a crazy oneliner which challenged me to use a single stream too on day 4. Let's see. ;-)
 
 ---
 
 **Day 4**
 
-As intended, I used just a single stream one-liner. Was tough as I'm not a fan of hard to read single line code (it's much more important to readthan to write code). But was fun too.
+As intended, I used just a single stream one-liner. Was tough as I'm not a fan of hard to read single line code (it's much more important to read than to write code). But was fun too.
 
 ---
 
@@ -48,7 +48,7 @@ Nice one. I was thinking of just maintaining the directories and their sizes but
 
 **Day 8**
 
-A good old grid/matrix exercise by Advent of Code. I don't like to use hundreds of loops in loops. Additionally accessing a grid/matrix in a loop can drive one crazy when using `i` and `j` as loop indeces and `+` and `-` to navigate and borders have to be taken into account. So I tried a different solution this time. I didn't fill the grid with integers but with instances of my own class `Tree` which all know their siblings. In that class I used recursion to calculate the solutions. So I didn't have to mess around with indices and borders. My Tree class can maybe still be slimed down a bit. Using a Non-Tree instance instead of `null` might be cool too. But time was over.
+A good old grid/matrix exercise by Advent of Code. I don't like to use hundreds of loops in loops. Additionally accessing a grid/matrix in a loop can drive one crazy when using `i` and `j` as loop indeces and `+` and `-` to navigate and borders have to be taken into account. So I tried a different solution this time. I didn't fill the grid with integers but with instances of my own class `Tree` which all know their siblings. In that class I used recursion to calculate the solutions. So I didn't have to mess around with indices and borders. My Tree class can maybe still be slimed down a bit. Using a Non-Tree instance instead of `null` might be cool too. But time was over. Edit: I implemented the Non-Tree version later. Makes the code better to read and I got rid of the nulls.
 
 ---
 
@@ -79,7 +79,7 @@ I do not like the days where it is just about mathematics and nothing else. I us
 
 **Day 13**
 
-Ouch. I tried to find an error in my compare  method for three hours just to find out that the parsing was the problem: numbers might be bigger than one digit which my parsing code did not reflect. At least it worked after that... but my code got worse and worse while trying to find the problem and using recursion was the wrong idea, as there were too many exceptions in the rules. In real life I would have to throw it aways and start over for having it clean. ;-)
+Ouch. I tried to find an error in my compare method for three hours just to find out that the parsing was the problem: numbers might be bigger than one digit which my parsing code did not reflect. At least it worked after that... but my code got worse and worse while trying to find the problem and using recursion was the wrong idea, as there were too many exceptions in the rules. In real life I would have to throw it aways and start over for having it clean. ;-)
 Part 2 was easy. I just introduced a `Comparator`, threw everything in a list and sort it. Took 5 minutes.
 
 ---
@@ -108,14 +108,19 @@ Programming `Tetris` was real fun. I worked with a clean Object structure to kee
 Nice one. I decided to just work with the indices to not get caught again by a clean but too slow design for part 2. I had a one-off problem in my modulo for negative indices so I needed a little bit help by other code examples. Part 2 was easy because my code was fast enough this time.
 
 ---
-
  
-**Day 22**
+**Day 21**
 
-Nice one. I didn't use a grid but Objects which know the position next to them and recursion. Would have worked great with the second part 2 too. But my brain was too lazy to find out which sites of the cube do touch.
+I just a full-blown `observer pattern` as solution. It was fun as it is kind of rare that patterns are helpful in AoC. Mostly algorithms are needed. But obserever pattern is still a pain in the ass in Java. The class `Observable` was  - mercifully - deprecated in Java 9. I used the `PropertyChangeListener` which is not good either as it does not support generics, so you are forced to cast. Next time i would try `java.util.concurrent.Flow`.
+For part 2 I was too lazy implementing cutting in halves. So I searched for an working start value manually and let a loop do the rest. :-P
 
 ---
 
+**Day 22**
+
+Nice one. I didn't use a grid but Objects which know the position next to them and recursion. Would have worked great with the second part too. But my brain was too lazy to find out which sites of the cube do touch each other.
+
+---
  
 **Day 23**
 
