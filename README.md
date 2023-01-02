@@ -102,6 +102,13 @@ It was fun to get the logic behind it. But I had no time left for part 2.
 Programming `Tetris` was real fun. I worked with a clean Object structure to keep the overview. But creating the objects and handle them in a Map not fast enough for part 2. I would have to wait 3 days for the result. ;-)
 
 ---
+
+**Day 18**
+
+This was fun. I thought of a clean object oriented structure first but then decided to just throw the coordinates in a list. It worked fine.
+For part 2 it took me a while to understand that it is not enough to search for strait lines to the border but to also take winding tunnels into account. I flooded the outer box with water so that all tunnels get filled and then add the remaining air to the droplet and use part 1 calculation.
+
+---
  
 **Day 20**
 
